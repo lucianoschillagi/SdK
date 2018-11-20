@@ -11,15 +11,6 @@
 import UIKit
 import Foundation
 
-// Model
-struct User {
-	var name: String = ""
-	var age: String = ""
-	var genre: String = ""
-	var headache: Bool? = nil
-	var alcohol: Bool? = nil
-}
-
 class MainViewController: UIViewController {
 	
 	//*****************************************************************
@@ -34,11 +25,6 @@ class MainViewController: UIViewController {
 	@IBOutlet weak var alcoholTextField: UITextField!
 	@IBOutlet weak var sendButton: UIButton!
 	
-	//*****************************************************************
-	// MARK: - Properties
-	//*****************************************************************
-	
-	var user = User()
 	
 	//*****************************************************************
 	// MARK: - VC Life Cycle
@@ -101,8 +87,6 @@ class MainViewController: UIViewController {
 		print(name, age, genre, headache, alcohol)
 		
 	}
-
-
 
 }
 
